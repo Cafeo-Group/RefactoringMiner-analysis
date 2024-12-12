@@ -21,7 +21,7 @@ def main():
             df_aux['repository'] = row['repository']
             df_aux['sha1'] = row['sha1']
             df4 = pd.concat([df4, df_aux])
-        df_final2 = pd.concat([df_final, df4])
+        df_final2 = pd.concat([df_final2, df4])
     df_final.to_csv('refactoring_analysis_general.csv', index=False)
     df_final2.to_csv('refactoring_analysis_details.csv', index=False)
 if __name__ == '__main__': 
